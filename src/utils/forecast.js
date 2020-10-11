@@ -9,7 +9,7 @@ const forecast = (latitude, longitude, callback) => {
         } else if (body.error) {
             callback('Wrong query', undefined)
         } else {
-            callback(undefined, `${body.current.weather_descriptions}. It is current ${body.current.temperature} degrees outside. There is a ${body.current.precip} % chances of rain`)
+            callback(undefined, `Current time: ${body.current.observation_time}. | Weather description: ${body.current.weather_descriptions}. | Temperature: ${body.current.temperature}. | Chances of rain: ${body.current.precip} | Wind speed: ${body.current.wind_speed}. | Wind direction ${body.current.wind_dir}`)
         }
     })
 }

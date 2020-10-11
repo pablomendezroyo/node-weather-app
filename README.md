@@ -4,7 +4,7 @@ Application deployment:
 
  heroku create <aplication name>
 
- The output should two URLs, the first is the application endpoint and the second one 
+ The output should two URLs, the first is the application endpoint and the second one . This will also create one more remote for the repository in heroku.
 
  2. Go to package.json and in scripts section add the command to run the application
 
@@ -17,4 +17,8 @@ Application deployment:
  const port = process.env.PORT || 3000 // First referred to heroku deployment. Second to local deployment
 
  app.listen(port...)
+
+4. Push the code into the remote heroku
+
+git push heroku master
 

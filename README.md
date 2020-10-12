@@ -1,4 +1,14 @@
-Application deployment:
+Application local deployment with DOCKER:
+
+In order to test the application with docker, a dockerfile was created to test the application in a node alpine base image. The process to test the application in a local environment using docker is:
+
+1. BUILD the image: docker build -t <dockerID>/<projectName>:latest .
+
+2. RUN the image: docker run -p 8080:3000 <docker Image name>
+
+3. Open browser and type: localhost:8080
+
+Application deployment to Heroku:
 
 1. Having heroku CLI installed, type the command: 
 

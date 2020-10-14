@@ -1,4 +1,18 @@
-Application local deployment with DOCKER:
+# WEATHER APPLICATION
+
+## Application development with **DOCKER**, **CONTINOUS INTEGRATION**:
+
+To be able to develope the application and visualize the changes in real time (continuous integration) with Docker there have been setup a dockerfile.dev and docker-compose.yml.
+
+To setup the development environment follow these steps:
+
+1. Startup: in the same directory as the docker-compose.yml file type *docker-compose up --build* for the first time. Second time and so on type *docker-compose up*.
+
+Then you are free to develope the app and visualize the changes in real time.
+
+2. Shut down: in the same directory as the docker-compose.yml file type *docker-compose down*
+
+## Application local deployment with **DOCKER**:
 
 In order to test the application with docker, a dockerfile was created to test the application in a node alpine base image. The process to test the application in a local environment using docker is:
 
@@ -8,7 +22,7 @@ In order to test the application with docker, a dockerfile was created to test t
 
 3. Open browser and type: localhost:8080
 
-Application deployment to Heroku:
+## Application deployment to **Heroku**:
 
 1. Having heroku CLI installed, type the command: 
 
